@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aidan French</title>
+    <link rel="stylesheet" href="system.css" />
+    <link rel="stylesheet" href="work.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="https://use.typekit.net/tpo0que.css">
+  </head>
+  <body>
+    <header>
+      <div class="mainLogo">
+        <a href="index.html">
+          <img src="assets/mainLogo.svg" alt="Aidan French" />
+        </a>
+      </div>
+      <nav class="navigation">
+        <a href="about.html" class="about-button">ABOUT</a>
+        <a href="work.html" class="work-button">WORK</a>
+        <a href="contact.html" class="contact-button">CONTACT</a>
+      </nav>
+         <button class="hamburger" aria-label="Toggle menu">
+          ☰
+        </button>
+    </header>
+    <div style="height: 200vh;"></div>
+
+    <footer>
+      <p> &copy; 2026 Aidan French. All rights reserved.</p>
+    </footer>
+
+    <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navigation = document.querySelector(".navigation");
+
+  hamburger.addEventListener("click", () => {
+    navigation.classList.toggle("active");
+  });
+</script>
+
+  </body>
+</html>

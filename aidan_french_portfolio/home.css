@@ -1,0 +1,40 @@
+body {
+  background-color: #fdfdfd;
+  padding: 60px;
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  fill: #5e5aa7;
+}
+
+.cls-2 {
+  fill: #5e5aa7;
+}
+
+.cls-3 {
+  fill: #231f20;
+}
+
+.cls-4 {
+  fill: #cfc34c;
+}
+
+.cls-5 {
+  fill: #bf2030;
+}
+
+.cls-6 {
+  clip-path: url(#clippath);
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

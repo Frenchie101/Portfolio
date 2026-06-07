@@ -1,0 +1,11 @@
+.homeImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+margin: 0; 
+padding: 0;/* Adjust for header and footer height */
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aidan French</title>
+    <link rel="stylesheet" href="system.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="https://use.typekit.net/tpo0que.css">
+  </head>
+  <body>
+    <header>
+  <div class="mainLogo">
+    <a href="index.html">
+      <img src="assets/mainLogo.svg" alt="Aidan French" />
+    </a>
+  </div>
+  <nav class="navigation">
+    <a href="about.html" class="about-button">ABOUT</a>
+    <a href="work.html" class="work-button">WORK</a>
+    <a href="contact.html" class="contact-button">CONTACT</a>
+  </nav>
+  <button class="hamburger" aria-label="Toggle menu">☰</button>
+</header>
+    <main>
+      <div class="contact-hero">
+        <h1>WANT TO START A <br> NEW PROJECT?</h1>
+        <h2>OR JUST SAY HI :) </h2>
+      </div>
+        <div class="cf-wrap">
+    <div id="cf-form">
+      <div class="cf-row">
+        <div>
+          <label class="cf-label">First name</label>
+          <input id="fname" class="cf-input" type="text" placeholder="John" />
+        </div>
+        <div>
+          <label class="cf-label">Last name</label>
+          <input id="lname" class="cf-input" type="text" placeholder="Smith" />
+        </div>
+      </div>
+
+      <div class="cf-field">
+        <label class="cf-label">Email <span>*</span></label>
+        <input id="email" class="cf-input" type="email" placeholder="JohnSmith@example.com" />
+      </div>
+
+      <div class="cf-field">
+        <label class="cf-label">Message</label>
+        <textarea id="message" class="cf-textarea" placeholder="Your message..."></textarea>
+      </div>
+
+      <p id="cf-error" class="cf-error"></p>
+
+      <div class="cf-footer">
+        <button id="cf-submit" class="cf-btn" onclick="handleSubmit()">Send</button>
+      </div>
+    </div>
+
+    <div id="cf-success" class="cf-success">
+      <p style="font-size: 16px; font-weight: 500;">Message sent!</p>
+      <p style="font-size: 14px; color: #666;">Thanks for reaching out. I'll be in touch soon.</p>
+      <button class="cf-btn" style="margin-top: 1rem;" onclick="resetForm()">Send another</button>
+    </div>
+  </div>
+    </main>
+      <footer>
+      <p> &copy; 2026 Aidan French. All rights reserved.</p>
+    </footer>
+     <script src="contact.js"></script>
+
+     <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navigation = document.querySelector(".navigation");
+
+  hamburger.addEventListener("click", () => {
+    navigation.classList.toggle("active");
+  });
+</script>
+
+  </body>
+</html>
