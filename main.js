@@ -6,13 +6,13 @@ blackElements.forEach(element => {
 });
 
 document.querySelector('.cls-5').addEventListener('click', () => {
-  window.location.href = "index.html";
+  window.location.href = "home.html";
 });
 
 document.querySelector('.cls-4').addEventListener('click', () => {
-  window.location.href = "index.html";
+  window.location.href = "home.html";
 });
 
 document.querySelector('.cls-2').addEventListener('click', () => {
-  window.location.href = "index.html";
+  window.location.href = "home.html";
 });
