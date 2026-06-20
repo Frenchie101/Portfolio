@@ -6,6 +6,10 @@ main {
   padding-bottom: 2rem;
 }
 
+body { 
+  font-family: ''
+}
+
 .contact-hero {
   text-align: center;
   padding: 2rem;

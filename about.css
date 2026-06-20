@@ -10,6 +10,21 @@ main {
   font-weight: 500;
 }
 
+.resume-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.75rem;
+  background-color: #D4C84A; /* swap for your exact yellow */
+  color: #000000;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border-radius: 999px; /* pill shape, matches nav */
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
 .portrait {
   max-width: 100%;
   height: auto;
