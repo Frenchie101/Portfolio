@@ -36,10 +36,3 @@ main {
     gap: 1rem;
   }
 }
-
-@media screen and (max-width: 480px) {
-  main {
-    font-size: 1.2rem;
-  }
-  
-}
