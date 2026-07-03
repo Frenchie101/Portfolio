@@ -111,7 +111,6 @@ function animate(id, toVal) {
   s.raf = requestAnimationFrame(step);
 }
 
-// --- Wordmark fade ---
 document.querySelectorAll('.cls-3').forEach(el => {
   el.addEventListener('mouseenter', () => {
     el.style.transition = 'opacity 3.25s ease';
