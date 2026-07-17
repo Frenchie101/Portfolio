@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Aidan French</title>
-    <link rel="stylesheet" href="system.css" />
-    <link rel="stylesheet" href="about.css" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="https://use.typekit.net/tpo0que.css" />
-  </head>
-  <body>
-    <header>
-      <div class="mainLogo">
-        <a href="home.html">
-          <img src="assets/mainLogo.svg" alt="Aidan French" />
-        </a>
-      </div>
-      <nav class="navigation">
-        <a href="about.html" class="about-button">ABOUT</a>
-        <a href="work.html" class="work-button">WORK</a>
-        <a href="contact.html" class="contact-button">CONTACT</a>
-      </nav>
-      <button class="hamburger" aria-label="Toggle menu">☰</button>
-    </header>
-    <main>
-      <img src="assets/portrait.PNG" class="portrait" />
-      <div class="bio">
-        <h1>About Me!</h1>
-        <p>
-          I am a designer whose practice is rooted in observation, research, and
-          critical inquiry. I am interested in the ways visual culture shapes
-          our understanding of the world, and how images, objects, and systems
-          of communication influence what we remember, value, and believe.
-          Rather than viewing design as a neutral tool for delivering
-          information, I approach it as a cultural practice that actively
-          participates in the construction of meaning.
-        </p>
-        <p>
-          My work often draws from archives, material histories, and everyday
-          forms, using design as a means of investigating relationships between
-          people, institutions, and the structures that organize contemporary
-          life. Working across print and digital media, I am interested in
-          projects that invite reflection, uncover hidden narratives, and
-          examine the social and symbolic dimensions of communication.
-        </p>
-        <a
-          href="assets/aidanfrench_resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          download="Aidan_French_Resume.pdf"
-          class="resume-button"
-          >Download My Resume</a
-        >
-      </div>
-    </main>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aidan French</title>
+<link rel="stylesheet" href="system.css" />
+<link rel="stylesheet" href="about.css" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="stylesheet" href="https://use.typekit.net/tpo0que.css" />
+</head>
+<body>
+<header>
+<div class="mainLogo">
+<a href="home.html">
+<img src="assets/mainLogo.svg" alt="Aidan French" />
+</a>
+</div>
+<nav class="navigation">
+<a href="about.html" class="about-button">ABOUT</a>
+<a href="work.html" class="work-button">WORK</a>
+<a href="contact1.html" class="contact-button">CONTACT</a>
+</nav>
+<button class="hamburger" aria-label="Toggle menu">☰</button>
+</header>
 
-    <footer>
-      <p>&copy; 2026 Aidan French. All rights reserved.</p>
-    </footer>
+<main>
+<img src="assets/portrait.PNG" alt="Illustrated self-portrait of Aidan French" class="portrait" />
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navigation = document.querySelector(".navigation");
+<div class="about-hero">
+<span class="about-hero__pill" aria-hidden="true"></span>
+<h1 class="about-hero__text">ABOUT ME</h1>
+</div>
 
-      hamburger.addEventListener("click", () => {
-        navigation.classList.toggle("active");
-      });
-    </script>
-  </body>
+<div class="bio">
+<p>
+I am a designer whose practice is rooted in observation, research, and
+critical inquiry. I am interested in the ways visual culture shapes
+our understanding of the world, and how images, objects, and systems
+of communication influence what we remember, value, and believe.
+Rather than viewing design as a neutral tool for delivering
+information, I approach it as a cultural practice that actively
+participates in the construction of meaning.
+</p>
+<p>
+My work often draws from archives, material histories, and everyday
+forms, using design as a means of investigating relationships between
+people, institutions, and the structures that organize contemporary
+life. Working across print and digital media, I am interested in
+projects that invite reflection, uncover hidden narratives, and
+examine the social and symbolic dimensions of communication.
+</p>
+<a
+href="assets/aidanfrench_resume.pdf"
+target="_blank"
+rel="noopener noreferrer"
+download="Aidan_French_Resume.pdf"
+class="resume-button"
+>DOWNLOAD MY RESUME</a>
+</div>
+</main>
+
+<footer>
+<p>&copy; 2026 Aidan French. All rights reserved.</p>
+</footer>
+
+<script src="about.js"></script>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navigation = document.querySelector(".navigation");
+
+hamburger.addEventListener("click", () => {
+navigation.classList.toggle("active");
+});
+</script>
+</body>
 </html>

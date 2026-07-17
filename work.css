@@ -1,3 +1,147 @@
+.work-hero {
+  position: relative;
+  display: block; /* was inline-block — that's what capped the width to the text size */
+  width: fit-content; /* text still sizes itself... */
+  font-size: 4rem;
+  letter-spacing: -9%;
+  padding: 0;
+  margin: 0 0 3rem;;
+}
+
+.work-hero__pill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 46vw; /* tune this — the actual reach of the bleed, independent of the text width */
+  background: #bf2030;
+  border-radius: 0 999px 999px 0;
+  transform-origin: right center;
+  transform: scaleX(0);
+  z-index: 0;
+  padding: 0;
+}
+
+.work-hero__text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0.4em 1.2em 0.4em 0.6em;
+  font-size: 4rem;
+  letter-spacing: -9%;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+ 
+.work-item {
+  display: flex;
+  align-items: stretch; /* content column stretches to match image height */
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+ 
+.work-item__media {
+  flex: 1;
+  height: 380px; /* fixed, consistent across every project */
+  background: #bf2030;
+}
+ 
+.work-item__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops to fill once real images are dropped in */
+  display: block;
+}
+ 
+.work-item__content {
+  flex: 1;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.work-item__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
+  padding: 0;
+  justify-content: flex-start;
+}
+ 
+.work-item__number {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.work-item__title {
+  margin: 0;
+}
+
+.work-item__desc {
+  line-height: 1.3;
+  margin: 0.5rem 0 0;
+  text-wrap: pretty;
+}
+ 
+.work-item__cta {
+  margin-top: 1.5rem; /* sits just below the description, not pinned to the bottom */
+  align-self: flex-start;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  background: transparent;
+  font-family: "new-order", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: #bf2030 solid 4px;
+  color: #bf2030;
+}
+
+.work-item__cta:hover {
+  background: #bf2030;
+  color: white;
+}
+
 footer {
   background: #bf2030;
+}
+
+@media (max-width: 768px) {
+  .work-item {
+    flex-direction: column;
+    height: auto; /* fixed row height was only needed for the 2-column desktop layout */
+    gap: 1.5rem;
+  }
+ 
+  .work-item__media {
+    height: 300px; /* own fixed height now, since it's no longer matched to a content column */
+  }
+ 
+  .work-item__content {
+    text-align: left;
+  }
+
+  .work-item__title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+ 
+  .work-item__header {
+    justify-content: left;
+  }
+ 
+  .work-item__cta {
+    margin-top: 1.5rem; /* back to normal flow spacing, no longer pinned via auto */
+    align-self: center;
+  }
 }

@@ -15,12 +15,12 @@ const configs = {
     x: 468.35, y: 225.82, w: 114.70, h: 114.70, rx: 57.35,
     dir: 'right',
     leftEdge: 468.35,
-    href: 'contact.html'
+    href: 'contact1.html'
   }
 };
 
 const BLEED = 5000;
-const DURATION = 600;
+const DURATION = 1200;
 
 function ease(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
 function lerp(a, b, t) { return a + (b - a) * t; }
