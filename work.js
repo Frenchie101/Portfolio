@@ -3,7 +3,7 @@ const configs = {
     x: 199.29, y: 29.25, w: 126.78, h: 126.78, rx: 63.39,
     dir: 'left',
     rightEdge: 326.07,
-    href: 'contact1.html'
+    href: 'contact.html'
   },
   red: {
     x: 116.89, y: 216.93, w: 65.74, h: 65.74, rx: 32.87,
