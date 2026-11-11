@@ -3,24 +3,24 @@ const configs = {
     x: 199.29, y: 29.25, w: 126.78, h: 126.78, rx: 63.39,
     dir: 'left',
     rightEdge: 326.07,
-    href: 'about.html'
+    href: 'home.html'
   },
   red: {
     x: 116.89, y: 216.93, w: 65.74, h: 65.74, rx: 32.87,
     dir: 'left',
     rightEdge: 182.63,
-    href: 'work.html'
+    href: 'home.html'
   },
   purple: {
     x: 468.35, y: 225.82, w: 114.70, h: 114.70, rx: 57.35,
     dir: 'right',
     leftEdge: 468.35,
-    href: 'contact1.html'
+    href: 'home.html'
   }
 };
 
 const BLEED = 5000;
-const DURATION = 1200;
+const DURATION = 1300;
 
 function ease(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
 function lerp(a, b, t) { return a + (b - a) * t; }
@@ -113,7 +113,7 @@ function animate(id, toVal) {
 
 document.querySelectorAll('.cls-3').forEach(el => {
   el.addEventListener('mouseenter', () => {
-    el.style.transition = 'opacity 3.25s ease';
+    el.style.transition = 'opacity 5s ease';
     el.style.opacity = '0';
     el.style.pointerEvents = 'none';
   });

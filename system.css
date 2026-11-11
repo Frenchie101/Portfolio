@@ -25,12 +25,12 @@ header {
   padding: 1rem 1.5rem;
   position: sticky;
   top: 0;
-  background: white;
+  background: transparent;
   z-index: 1000;
 }
 
 .mainLogo img {
-  width: 220px;
+  width: 165px;
   height: auto;
   display: block;
 }
@@ -44,25 +44,20 @@ header {
 .about-button,
 .work-button,
 .contact-button {
-  padding: 0.7rem 1.6rem;
-  border-radius: 999px;
+  padding: 0.7rem 1rem;
   background: transparent;
   font-family: "new-order", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 1.5rem;
+  font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
+  color: black;
 }
 
-.about-button { border: 4px solid #5e5aa7; color: #5e5aa7; }
-.work-button  { border: 4px solid #bf2030; color: #bf2030; }
-.contact-button { border: 4px solid #cfc34c; color: #cfc34c; }
-
-.about-button:hover  { background: #5e5aa7; color: white; }
-.work-button:hover   { background: #bf2030; color: white; }
-.contact-button:hover { background: #cfc34c; color: white; }
+.about-button:hover  { color: #5e5aa7; }
+.work-button:hover   { color: #bf2030; }
+.contact-button:hover { color: #cfc34c; }
 
 .hamburger {
   display: none;
@@ -124,6 +119,6 @@ footer {
   .contact-button {
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
-    border-width: 3px;
+    border: none;
   }
 }

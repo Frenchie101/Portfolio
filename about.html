@@ -25,45 +25,50 @@
 </header>
 
 <main>
-<img src="assets/portrait.PNG" alt="Illustrated self-portrait of Aidan French" class="portrait" />
 
-<div class="about-hero">
-<span class="about-hero__pill" aria-hidden="true"></span>
-<h1 class="about-hero__text">ABOUT ME</h1>
-</div>
+     <main>
+      <section class="hero">
+         <svg id="svg" class="homeSvg" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 679.21 376.64" preserveAspectRatio="xMinYMax meet"
+          style="overflow: visible;">
 
-<div class="bio">
+    <rect id="yellow" fill="#cfc34c" x="199.29" y="29.25" width="126.78" height="126.78" rx="63.39" ry="63.39"/>
+    <rect id="red"    fill="#bf2030" x="116.89" y="216.93" width="65.74"  height="65.74"  rx="32.87" ry="32.87"/>
+    <rect id="purple" fill="#5e5aa7" x="468.35" y="225.82" width="114.70" height="114.70" rx="57.35" ry="57.35"/>
+    </svg>
+
+       <h1> ABOUT </h1>
+      </section>
+
+      <section class="content">
+        <img src="assets/portrait.PNG" alt="Illustrated self-portrait of Aidan French" class="portrait" />
+
+        <div class="bio">
 <p>
-I am a designer whose practice is rooted in observation, research, and
-critical inquiry. I am interested in the ways visual culture shapes
-our understanding of the world, and how images, objects, and systems
-of communication influence what we remember, value, and believe.
-Rather than viewing design as a neutral tool for delivering
-information, I approach it as a cultural practice that actively
-participates in the construction of meaning.
+My name is Aidan French, and I am a designer working across editorial, 
+identity, and experimental design. My practice emphasizes playful experimentation, 
+rigorous typography, and visual craft. I’m interested in creating the conditions for identities 
+and visual systems to grow and evolve, rather than simply giving them a style. </p>
+
 </p>
+Rooted in research and formal experimentation, my work explores how strong concepts can be translated
+ into equally compelling visual forms. I believe that design should do more than communicate or solve 
+ problems; it should also provoke curiosity, challenge assumptions, and pose new questions. </p>
+
 <p>
-My work often draws from archives, material histories, and everyday
-forms, using design as a means of investigating relationships between
-people, institutions, and the structures that organize contemporary
-life. Working across print and digital media, I am interested in
-projects that invite reflection, uncover hidden narratives, and
-examine the social and symbolic dimensions of communication.
-</p>
-<a
-href="assets/aidanfrench_resume.pdf"
-target="_blank"
-rel="noopener noreferrer"
-download="Aidan_French_Resume.pdf"
-class="resume-button"
->DOWNLOAD MY RESUME</a>
+Much of my personal work investigates hidden forms of knowledge and the ways design shapes our understanding 
+of the world around us. Rather than viewing design as a neutral tool for delivering information, I approach 
+it as a cultural practice that actively constructs meaning. Drawing from archives, material histories, 
+and everyday objects, I use design to explore the relationships between people, culture, and the systems 
+that shape our lives. </p>
+<a href="assets/aidanfrench_resume.pdf" target="_blank" rel="noopener noreferrer" download="Aidan_French_Resume.pdf" class="resume-button"> DOWNLOAD MY RESUME</a>
 </div>
-</main>
+      </section>
+    </main>
 
 <footer>
 <p>&copy; 2026 Aidan French. All rights reserved.</p>
 </footer>
-
 <script src="about.js"></script>
 <script>
 const hamburger = document.querySelector(".hamburger");
@@ -73,5 +78,4 @@ hamburger.addEventListener("click", () => {
 navigation.classList.toggle("active");
 });
 </script>
-</body>
 </html>

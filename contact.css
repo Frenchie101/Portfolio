@@ -1,18 +1,88 @@
-footer {
+ :root {
+  --header-h: 7.7rem;   
+}
+ 
+@media (max-width: 768px) {
+  :root { --header-h: 8rem; }  
+}
+ 
+
+body {
+  background-color: #fdfdfd;
+  padding: 0;            
+}
+ 
+main {
+  padding: 0;            
+  flex: none;            
+}
+ 
+.contact-button { 
+  color:#cfc34c;
+} 
+.contact-button:hover  { color: black; } 
+
+.hero {
+  position: relative;
+  height: calc(100dvh - var(--header-h));
+  padding: 0 1.5rem 1.5rem;   
+  overflow: hidden;           
+}
+ 
+.homeSvg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible; 
+}
+ 
+#yellow,
+#red,
+#purple {
+  cursor: pointer;
+}
+
+.hero h1 {
+  position: absolute;
+  left: 3.5rem;                /* adjust to taste; 1.5rem lines up with the logo */
+  bottom: 1.5rem;
+  margin: 0;
+  font-size: clamp(5rem, 12.5vw, 20rem);
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -0.15em;     /* tight, overlapping letters like the mockup */
+  pointer-events: none;        /* never blocks hover on the shapes */
+}
+
+.fade-overlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 3000;             
+}
+ 
+.fade-overlay.on {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -0.02em;
+  margin: 0;
+  font-weight:500
+}
+ 
+ 
+.content {
+  padding: 2rem 1.5rem;
   background: #cfc34c;
 }
 
-main {
-  padding-bottom: 2rem;
-}
-
-body { 
-  font-family: ''
-}
-
-.contact-hero {
-  text-align: center;
-  padding: 2rem;
+footer {
+  background: #cfc34c;
 }
 
 .cf-wrap {
@@ -62,7 +132,7 @@ body {
 }
 
 .cf-input:focus,
-.cf-textarea:focus { border-color: #cfc34c; }
+.cf-textarea:focus { border-color: #000000; }
 
 .cf-input::placeholder,
 .cf-textarea::placeholder { color: #aaa; }

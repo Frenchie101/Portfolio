@@ -1,11 +1,73 @@
-.homeImage {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+ :root {
+  --header-h: 7.7rem;   
 }
-
+ 
+@media (max-width: 768px) {
+  :root { --header-h: 8rem; }  
+}
+ 
+ 
+body {
+  background-color: #fdfdfd;
+  padding: 0;            
+}
+ 
 main {
-margin: 0; 
-padding: 0;/* Adjust for header and footer height */
+  padding: 0;            
+  flex: none;            
+}
+ 
+/* Header logo is invisible on the home page (the hero is the logo).
+   visibility (not display:none) keeps its space, so the header is the
+   same height as on every other page and the nav stays in the same spot. */
+.mainLogo img {
+  visibility: hidden;
+}
+ 
+/* ---------- Hero ---------- */
+ 
+.hero {
+  position: relative;
+  height: calc(100dvh - var(--header-h));
+  padding: 0 1.5rem 1.5rem;   /* left edge lines up with the header's 1.5rem */
+  overflow: hidden;           /* clips the pill bleed to the hero */
+}
+ 
+.homeSvg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;          /* lets the pills expand past the svg box */
+}
+ 
+.cls-3 {
+  fill: #231f20;              /* wordmark */
+}
+ 
+#yellow,
+#red,
+#purple {
+  cursor: pointer;
+}
+ 
+/* ---------- Page transition ---------- */
+ 
+.fade-overlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 3000;              /* above the sticky header */
+}
+ 
+.fade-overlay.on {
+  opacity: 1;
+}
+ 
+/* ---------- Content below the hero ---------- */
+ 
+.content {
+  padding: 2rem 1.5rem;
 }
