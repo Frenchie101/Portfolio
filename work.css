@@ -44,14 +44,14 @@ main {
 
 .hero h1 {
   position: absolute;
-  left: 3.5rem;                /* adjust to taste; 1.5rem lines up with the logo */
+  left: 3.5rem;                
   bottom: 1.5rem;
   margin: 0;
   font-size: clamp(5rem, 12.5vw, 20rem);
   font-weight: 700;
   line-height: 0.8;
-  letter-spacing: -0.15em;     /* tight, overlapping letters like the mockup */
-  pointer-events: none;        /* never blocks hover on the shapes */
+  letter-spacing: -0.15em;     
+  pointer-events: none;       
 }
 
 .fade-overlay {
@@ -78,6 +78,7 @@ h1 {
  
 .content {
   padding: 2rem 1.5rem;
+  padding-top: 4rem;
   background: #bf2030;
 }
 
@@ -85,29 +86,6 @@ footer {
   background: #bf2030;
 }
 
-
-/* .work-hero__pill {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  width: 46vw; 
-  background: #bf2030;
-  border-radius: 0 999px 999px 0;
-  transform-origin: right center;
-  transform: scaleX(0);
-  z-index: 0;
-  padding: 0;
-}
-
-.work-hero__text {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  padding: 0.4em 1.2em 0.4em 0.6em;
-  font-size: 4rem;
-  letter-spacing: -9%;
-}
 
 .work-list {
   display: flex;
@@ -120,6 +98,7 @@ footer {
   align-items: stretch; 
   gap: 3rem;
   padding-bottom: 3rem;
+  margin: 1rem;
 }
  
 .work-item__media {
@@ -171,23 +150,22 @@ footer {
 .work-item__cta {
   margin-top: 1.5rem; 
   align-self: flex-start;
-  padding: 0.7rem 1.6rem;
+  padding: 0.4rem 1.6rem;
   border-radius: 999px;
-  background: transparent;
+  background: black;
   font-family: "new-order", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  outline: #bf2030 solid 4px;
   color: #bf2030;
 }
 
 .work-item__cta:hover {
-  background: #bf2030;
-  color: white;
+  color: black;
+  background: transparent;
 }
 
 footer {
@@ -222,4 +200,4 @@ footer {
     margin-top: 1.5rem; 
     align-self: center;
   }
-}  */
+} 
